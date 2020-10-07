@@ -224,7 +224,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="submit" class="btn btn-primary">Send message</button>
+                  <button type="submit" class="btn btn-primary" onclick="newTab();">Send message</button>
                 </div>
                 </form>
               </div>
@@ -454,6 +454,16 @@
 
     var pesan = document.getElementById("pesan");
     pesan.innerHTML= "nama"+nama;
+  }
+  </script>
+
+  <script>
+  function newTab(){
+    var pax = document.getElementById("luxury").pax.value;
+    var alamat = document.getElementById("luxury").alamat.value;
+    var nama = document.getElementById("luxury").nama.value;
+    var win = window.open('https://api.whatsapp.com/send/?phone=+6283853399847&text= Halo Pesona Travel,%0A%0A Saya '+nama+' ingin memesan travel%0A%0A Alamat = '+alamat+'%0APax = '+pax,'_blank');
+    win.focus();
   }
   </script>
 
