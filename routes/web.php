@@ -17,8 +17,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', function () {
-    return view('landing');
-});
+// Route::get('/', function () {
+//     return view('landing');
+// });
 
-Route::post('/luxury', 'TransaksiController@luxury')->name('luxury');
+// Route::post('/luxury', 'TransaksiController@luxury')->name('luxury');
+Route::get('/', 'TransaksiController@landing')->name('landing');

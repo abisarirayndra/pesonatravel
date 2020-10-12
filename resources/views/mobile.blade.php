@@ -187,6 +187,7 @@
             <a href="#" class="get-started-btn" type="submit" data-toggle="modal" data-target="#exampleModal">Pesan Sekarang</a>
             </form>
           </div>
+
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -199,32 +200,32 @@
                 </div>
                 <div class="modal-body">
                 @csrf
-                  <form id="luxury" method="post">
+                  <form id="luxury" >
                     <div class="form-group">
                       <label for="recipient-name" class="col-form-label">Nama</label>
-                      <input type="text" class="form-control" id="nama" name="nama">
+                      <input type="text" class="form-control" id="nama">
                     </div>
                     <div class="form-group">
                       <label for="recipient-name" class="col-form-label">No.WhatsApp</label>
-                      <input type="number" class="form-control" id="wa" name="wa">
+                      <input type="number" class="form-control" id="wa">
                     </div>
                     <div class="form-group">
                       <label for="recipient-name" class="col-form-label">Berapa pax</label>
-                      <input type="number" class="form-control" id="pax" name="pax">
+                      <input type="number" class="form-control" id="pax">
                     </div>
                     <div class="form-group">
                       <label for="message-text" class="col-form-label">Alamat</label>
-                      <textarea class="form-control" id="alamat" name="alamat"></textarea>
+                      <textarea class="form-control" id="alamat"></textarea>
                     </div>
                     <div class="form-group">
                       <label for="message-text" class="col-form-label">Alamat Penjemputan</label>
-                      <textarea class="form-control" id="jemput" name="jemput">Jelaskan dengan detail</textarea>
+                      <textarea class="form-control" id="jemput" >Jelaskan dengan detail</textarea>
                     </div>
                   
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="submit" class="btn btn-primary" onclick="newTab();">Send message</button>
+                  <button type="submit" class="btn btn-primary" onclick="mobile();">Send message</button>
                 </div>
                 </form>
               </div>
@@ -458,14 +459,23 @@
   </script>
 
   <script>
-  function newTab(){
+  function destkop(){
     var pax = document.getElementById("luxury").pax.value;
     var alamat = document.getElementById("luxury").alamat.value;
     var nama = document.getElementById("luxury").nama.value;
-    var win = window.open('https://api.whatsapp.com/send/?phone=+6283853399847&text= Halo Pesona Travel,%0A%0A Saya '+nama+' ingin memesan travel%0A%0A Alamat = '+alamat+'%0APax = '+pax,'_blank');
+    var win = window.open('https:/wa.me/6283853399847?&text= Halo Pesona Travel,%0A%0A Saya '+nama+' ingin memesan travel%0A%0A Alamat = '+alamat+'%0APax = '+pax,'_blank');
     win.focus();
   }
   </script>
+  <script>
+    function mobile(){
+      var pax = document.getElementById("luxury").pax.value;
+      var alamat = document.getElementById("luxury").alamat.value;
+      var nama = document.getElementById("luxury").nama.value;
+      var win = window.open('https:/wa.me/6283853399847?&text= Halo Pesona Travel,%0A%0A Saya '+nama+' ingin memesan travel%0A%0A Alamat = '+alamat+'%0APax = '+pax,'_blank');
+      win.focus();
+    }
+    </script>
 
 </body>
 
