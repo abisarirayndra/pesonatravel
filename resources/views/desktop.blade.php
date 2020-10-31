@@ -271,7 +271,7 @@
                     </div>
                     <div class="form-group">
                       <label for="message-text" class="col-form-label">Alamat Penjemputan</label>
-                      <textarea class="form-control" id="jemput">Jelaskan dengan detail</textarea>
+                      <textarea style="resize: none;" class="form-control" id="jemput" placeholder="Jelaskan dengan detail"></textarea>
                     </div>
                   
                 </div>
