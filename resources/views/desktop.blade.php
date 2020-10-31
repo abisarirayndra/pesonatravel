@@ -142,7 +142,7 @@
               <li></li>
             </ul>
             <form action="">
-            <a href="#" class="get-started-btn" type="submit" data-toggle="modal" data-target="#exampleModal">Pesan Sekarang</a>
+            <a href="#" class="get-started-btn" type="submit" data-toggle="modal" data-target="#reg">Pesan Sekarang</a>
             </form>
           </div>
           <div class="col-lg-3 box featured" data-aos="fade-left">
@@ -158,7 +158,7 @@
               <li style="margin-top:5px;"></li>
             </ul>
             <form action="">
-            <a href="#" class="get-started-btn" type="submit" data-toggle="modal" data-target="#exampleModal">Pesan Sekarang</a>
+            <a href="#" class="get-started-btn" type="submit" data-toggle="modal" data-target="#exec">Pesan Sekarang</a>
             </form>
           </div>
           <div class="col-lg-3 box featured" data-aos="fade-right">
@@ -171,9 +171,10 @@
               <li></li>
             </ul>
             <form action="">
-            <a href="#" class="get-started-btn" type="submit" data-toggle="modal" data-target="#exampleModal">Pesan Sekarang</a>
+            <a href="#" class="get-started-btn" type="submit" data-toggle="modal" data-target="#lux">Pesan Sekarang</a>
             </form>
           </div>
+          
           <div class="col-lg-3 box featured" data-aos="fade-right">
             <h3>VVIP</h3>
             <h4>IDR 650K<span>per unit</span></h4>
@@ -184,30 +185,46 @@
               <li></li>
             </ul>
             <form action="">
-            <a href="#" class="get-started-btn" type="submit" data-toggle="modal" data-target="#exampleModal">Pesan Sekarang</a>
+            <a href="#" class="get-started-btn" type="submit" data-toggle="modal" data-target="#vvip">Pesan Sekarang</a>
             </form>
           </div>
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="reg" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                  <h5 class="modal-title" id="exampleModalLabel">Pesan Reguler</h5>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
                 <div class="modal-body">
                
-                  <form id="luxury">
+                  <form id="pesan">
                     <div class="form-group">
                       <label for="recipient-name" class="col-form-label">Nama</label>
                       <input type="text" class="form-control" id="nama">
                     </div>
                     <div class="form-group">
+                      <input hidden type="text" class="form-control" id="tipe" value="reguler">
+                    </div>
+                    <div class="form-group">
                       <label for="recipient-name" class="col-form-label">No.WhatsApp</label>
                       <input type="number" class="form-control" id="wa">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Tujuan</label>
+                      <select type="number" class="form-control" id="rute">
+                            <option value="Jember-Malang">Jember-Malang</option>
+                            <option value="Jember-Bali">Jember-Bali</option>
+                            <option value="Jember-Surabaya">Jember-Surabaya</option>
+                            <option value="Malang-Jember">Malang-Jember</option>
+                            <option value="Bali-Jember">Bali-Jember</option>
+                            <option value="Surabaya-Jember">Surabaya-Jember</option>
+                            
+                      </select>
                     </div>
                     <div class="form-group">
                       <label for="recipient-name" class="col-form-label">Berapa pax</label>
@@ -225,13 +242,182 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="submit" class="btn btn-primary" onclick="desktop();">Send message</button>
+                  <button type="submit" class="btn btn-primary" onclick="reguler();">Send message</button>
                 </div>
                 </form>
               </div>
             </div>
-          </div>
-        </div>
+      </div>
+      <div class="modal fade" id="exec" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Pesan Executive</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+               
+                <form id="pesan-exec">
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Nama</label>
+                      <input type="text" class="form-control" id="nama">
+                    </div>
+                    <div class="form-group">
+                      <input hidden type="text" class="form-control" id="tipe" value="executive">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">No.WhatsApp</label>
+                      <input type="number" class="form-control" id="wa">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Tujuan</label>
+                      <select type="number" class="form-control" id="rute">
+                            <option value="Jember-Malang">Jember-Malang</option>
+                            <option value="Jember-Bali">Jember-Bali</option>
+                            <option value="Jember-Surabaya">Jember-Surabaya</option>
+                            <option value="Malang-Jember">Malang-Jember</option>
+                            <option value="Bali-Jember">Bali-Jember</option>
+                            <option value="Surabaya-Jember">Surabaya-Jember</option>
+                            
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Berapa pax</label>
+                      <input type="number" class="form-control" id="pax">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Alamat</label>
+                      <textarea class="form-control" id="alamat"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Alamat Penjemputan</label>
+                      <textarea class="form-control" id="jemput">Jelaskan dengan detail</textarea>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary" onclick="executive();" >Send message</button>
+                </div>
+                </form>
+              </div>
+            </div>
+      </div>
+      <div class="modal fade" id="lux" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Pesan Executive</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+               
+                <form id="pesan-lux">
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Nama</label>
+                      <input type="text" class="form-control" id="nama">
+                    </div>
+                    <div class="form-group">
+                      <input hidden type="text" class="form-control" id="tipe" value="luxury">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">No.WhatsApp</label>
+                      <input type="number" class="form-control" id="wa">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Tujuan</label>
+                      <select type="number" class="form-control" id="rute">
+                            <option value="Jember-Malang">Jember-Malang</option>
+                            <option value="Jember-Bali">Jember-Bali</option>
+                            <option value="Jember-Surabaya">Jember-Surabaya</option>
+                            <option value="Malang-Jember">Malang-Jember</option>
+                            <option value="Bali-Jember">Bali-Jember</option>
+                            <option value="Surabaya-Jember">Surabaya-Jember</option>
+                            
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Berapa pax</label>
+                      <input type="number" class="form-control" id="pax">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Alamat</label>
+                      <textarea class="form-control" id="alamat"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Alamat Penjemputan</label>
+                      <textarea class="form-control" id="jemput">Jelaskan dengan detail</textarea>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary" onclick="luxury();">Send message</button>
+                </div>
+                </form>
+              </div>
+            </div>
+      </div>
+      <div class="modal fade" id="vvip" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Pesan Executive</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+               
+                <form id="pesan-vvip">
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Nama</label>
+                      <input type="text" class="form-control" id="nama">
+                    </div>
+                    <div class="form-group">
+                      <input hidden type="text" class="form-control" id="tipe" value="vvip">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">No.WhatsApp</label>
+                      <input type="number" class="form-control" id="wa">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Tujuan</label>
+                      <select type="number" class="form-control" id="rute">
+                            <option value="Jember-Malang">Jember-Malang</option>
+                            <option value="Jember-Bali">Jember-Bali</option>
+                            <option value="Jember-Surabaya">Jember-Surabaya</option>
+                            <option value="Malang-Jember">Malang-Jember</option>
+                            <option value="Bali-Jember">Bali-Jember</option>
+                            <option value="Surabaya-Jember">Surabaya-Jember</option>
+                            
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Berapa pax</label>
+                      <input type="number" class="form-control" id="pax">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Alamat</label>
+                      <textarea class="form-control" id="alamat"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Alamat Penjemputan</label>
+                      <textarea class="form-control" id="jemput">Jelaskan dengan detail</textarea>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary" onclick="vvip();">Send message</button>
+                </div>
+                </form>
+              </div>
+            </div>
       </div>
     </section><!-- End Pricing Section -->
 
@@ -269,10 +455,71 @@
               <li></li>
             </ul>
             <form action="">
-            <a href="#" class="get-started-btn" type="submit" data-toggle="modal" data-target="#exampleModal">Pesan Sekarang</a>
+            <a href="#" class="get-started-btn" type="submit" data-toggle="modal" data-target="#apace-f">Pesan Sekarang</a>
             </form>
           </div>
         </div>
+      </div>
+      <div class="modal fade" id="apace-f" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Pesan Executive</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+               
+                <form id="pesan-apace">
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Nama</label>
+                      <input type="text" class="form-control" id="nama">
+                    </div>
+                    <div class="form-group">
+                      <input hidden type="text" class="form-control" id="tipe" value="apace">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">No.WhatsApp</label>
+                      <input type="number" class="form-control" id="wa">
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Tujuan</label>
+                      <select type="number" class="form-control" id="rute">
+                            <option value="Jember-Malang">Jember-Malang</option>
+                            <option value="Jember-Bali">Jember-Bali</option>
+                            <option value="Jember-Surabaya">Jember-Surabaya</option>
+                            <option value="Malang-Jember">Malang-Jember</option>
+                            <option value="Bali-Jember">Bali-Jember</option>
+                            <option value="Surabaya-Jember">Surabaya-Jember</option>
+                            
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label">Berapa paket</label>
+                      <input type="number" class="form-control" id="pax">
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Alamat</label>
+                      <textarea class="form-control" id="alamat"></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Alamat Penjemputan</label>
+                      <textarea class="form-control" id="jemput">Jelaskan dengan detail</textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Alamat Tujuan</label>
+                      <textarea class="form-control" id="tujuan"></textarea>
+                    </div>
+                  
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary" onclick="apace();">Send message</button>
+                </div>
+                </form>
+              </div>
+            </div>
       </div>
     </section><!-- End Pricing Section -->
 
@@ -445,38 +692,72 @@
   <script src="{{ asset('js/main.js')}}"></script>
 
   <script>
+  function reguler(){
+    var pax = document.getElementById("pesan").pax.value;
+    var alamat = document.getElementById("pesan").alamat.value;
+    var nama = document.getElementById("pesan").nama.value;
+    var jemput = document.getElementById("pesan").jemput.value;
+    var wa = document.getElementById("pesan").wa.value;
+    var rute = document.getElementById("pesan").rute.value;
+    var tipe = document.getElementById("pesan").tipe.value;
+    var bayar = pax * 125000;
+    var win = window.open('https:/web.whatsapp.com/send?phone=6283853399847&text= Haloo%20Admin.%0A%0A*Paket%20Reguler*%20%0ARute%20%3A%20'+rute+'%2C%0A%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput,'_blank');
+    win.focus(); 
+  }
+
+  function executive(){
+    var pax = document.getElementById("pesan-exec").pax.value;
+    var alamat = document.getElementById("pesan-exec").alamat.value;
+    var nama = document.getElementById("pesan-exec").nama.value;
+    var jemput = document.getElementById("pesan-exec").jemput.value;
+    var wa = document.getElementById("pesan-exec").wa.value;
+    var rute = document.getElementById("pesan-exec").rute.value;
+    var tipe = document.getElementById("pesan-exec").tipe.value;
+    var bayar = pax * 150000;
+    var win = window.open('https:/web.whatsapp.com/send?phone=6283853399847&text= Haloo%20Admin.%0A%0A*Paket%20Executive*%20%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput,'_blank');
+    win.focus(); 
+  }
+
   function luxury(){
-    var nama = document.getElementById("luxury").nama.value;
-    var wa = document.getElementById("luxury").wa.value;
-    var pax = document.getElementById("luxury").pax.value;
+    var pax = document.getElementById("pesan-lux").pax.value;
+    var alamat = document.getElementById("pesan-lux").alamat.value;
+    var nama = document.getElementById("pesan-lux").nama.value;
+    var jemput = document.getElementById("pesan-lux").jemput.value;
+    var wa = document.getElementById("pesan-lux").wa.value;
+    var rute = document.getElementById("pesan-lux").rute.value;
+    var tipe = document.getElementById("pesan-lux").tipe.value;
     var bayar = pax * 200000;
-    var alamat = document.getElementById("luxury").alamat.value;
-    var jemput = document.getElementById("luxury").jemput.value;
+    var win = window.open('https:/web.whatsapp.com/send?phone=6283853399847&text= Haloo%20Admin.%0A%0A*Paket%20Luxury*%20%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput,'_blank');
+    win.focus(); 
+  }
 
-    var pesan = document.getElementById("pesan");
-    pesan.innerHTML= "nama"+nama;
+  function vvip(){
+    var pax = document.getElementById("pesan-vvip").pax.value;
+    var alamat = document.getElementById("pesan-vvip").alamat.value;
+    var nama = document.getElementById("pesan-vvip").nama.value;
+    var jemput = document.getElementById("pesan-vvip").jemput.value;
+    var wa = document.getElementById("pesan-vvip").wa.value;
+    var rute = document.getElementById("pesan-vvip").rute.value;
+    var tipe = document.getElementById("pesan-vvip").tipe.value;
+    var bayar = pax * 650000;
+    var win = window.open('https:/web.whatsapp.com/send?phone=6283853399847&text= Haloo%20Admin.%0A%0A*Paket%20VVIP*%20%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput,'_blank');
+    win.focus(); 
+  }
+
+  function apace(){
+    var pax = document.getElementById("pesan-apace").pax.value;
+    var alamat = document.getElementById("pesan-apace").alamat.value;
+    var nama = document.getElementById("pesan-apace").nama.value;
+    var jemput = document.getElementById("pesan-apace").jemput.value;
+    var wa = document.getElementById("pesan-apace").wa.value;
+    var rute = document.getElementById("pesan-apace").rute.value;
+    var tipe = document.getElementById("pesan-apace").tipe.value;
+    var tujuan = document.getElementById("pesan-apace").tujuan.value;
+    var bayar = pax * 75000;
+    var win = window.open('https:/web.whatsapp.com/send?phone=6283853399847&text= Haloo%20Admin.%0A%0A*Paket%20APACE*%20%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput+'%2C%0A%20%20Alamat%20Tujuan%20%3A%20'+tujuan,'_blank');
+    win.focus(); 
   }
   </script>
-
-  <script>
-  function desktop(){
-    var pax = document.getElementById("luxury").pax.value;
-    var alamat = document.getElementById("luxury").alamat.value;
-    var nama = document.getElementById("luxury").nama.value;
-    var win = window.open('https:/web.whatsapp.com/send?phone=6283853399847&text= Halo Pesona Travel,%0A%0A Saya '+nama+' ingin memesan travel%0A%0A Alamat = '+alamat+'%0APax = '+pax,'_blank');
-    win.focus();
-    window.location.replace("http://www.w3schools.com");
-  }
-  </script>
-  <script>
-    function mobile(){
-      var pax = document.getElementById("luxury").pax.value;
-      var alamat = document.getElementById("luxury").alamat.value;
-      var nama = document.getElementById("luxury").nama.value;
-      var win = window.open('https:/wa.me/6283853399847?&text= Halo Pesona Travel,%0A%0A Saya '+nama+' ingin memesan travel%0A%0A Alamat = '+alamat+'%0APax = '+pax,'_blank');
-      win.focus();
-    }
-    </script>
 
 </body>
 
