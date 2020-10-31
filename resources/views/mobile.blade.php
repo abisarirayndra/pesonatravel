@@ -27,7 +27,7 @@
 
   <!-- Vendor CSS Files -->
   <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <!--<link href="{{ asset('vendor/icofont/icofont.min.css')}}" rel="stylesheet">-->
+  <link href="{{ asset('vendor/icofont/icofont.min.css')}}" rel="stylesheet">
   <link href="{{ asset('vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
   <!--<link href="{{ asset('vendor/owl.carousel/asseowl.carousel.min.css')}}" rel="stylesheet">-->
   <link href="{{ asset('vendor/venobox/venobox.css')}}" rel="stylesheet">
