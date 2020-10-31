@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Pesona Travel</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
+  <meta name="title" content="Pesona Travel — Travel Murah, Antar Paket, Banyuwangi, Bali, Jember, Surabaya">
+  <meta content="Pesona travel adalah biro perjalanan travel dan wisata yang berpusat di Kabupaten Jember. Tujuan kami  memberikan pelayanan terbaik untuk anda, memberikan kemudahan dalam pemesanan tiket, ketepatan waktu penjemputan, hingga fasilitas terbaik dari armada kami yang khusus disiapkan untuk menemani perjalanan anda hingga sampai tujuan." name="descriptison">
+  <meta content="Travel Pesona Travel, Travel bus, Travel mobil, travel murah, travel pp, travel malang, travel banyuwangi, sewa mobil banyuwangi, harga tiket travel" name="keywords">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pesonatravel.id/">
+<meta property="og:title" content="Pesona Travel — Travel Murah, Antar Paket, Banyuwangi, Bali, Jember, Surabaya">
+<meta property="og:description" content="Pesona travel adalah biro perjalanan travel dan wisata yang berpusat di Kabupaten Jember. Tujuan kami  memberikan pelayanan terbaik untuk anda, memberikan kemudahan dalam pemesanan tiket, ketepatan waktu penjemputan, hingga fasilitas terbaik dari armada kami yang khusus disiapkan untuk menemani perjalanan anda hingga sampai tujuan.">
+<meta property="og:image" content="https://pesonatravel.id/img/details-2.webp">
+
 
   <!-- Favicons -->
-  <link href="{{ asset('img/favicon.jpg')}}" rel="icon">
+  <link href="{{ asset('img/favicon.ico')}}" rel="icon">
   <!-- <link href="{{ asset('img/apple-touch-icon.png')}}" rel="apple-touch-icon"> -->
 
   <!-- Google Fonts -->
@@ -18,9 +27,9 @@
 
   <!-- Vendor CSS Files -->
   <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-  <link href="{{ asset('vendor/icofont/icofont.min.css')}}" rel="stylesheet">
+  <!--<link href="{{ asset('vendor/icofont/icofont.min.css')}}" rel="stylesheet">-->
   <link href="{{ asset('vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-  <link href="{{ asset('vendor/owl.carousel/asseowl.carousel.min.css')}}" rel="stylesheet">
+  <!--<link href="{{ asset('vendor/owl.carousel/asseowl.carousel.min.css')}}" rel="stylesheet">-->
   <link href="{{ asset('vendor/venobox/venobox.css')}}" rel="stylesheet">
   <link href="{{ asset('vendor/aos/aos.css')}}" rel="stylesheet">
 
@@ -29,12 +38,39 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
 
+<link href="https://pesonatravel.id/" rel="canonical">
+<link href="https://pesonatravel.id/" rel="home">
   <!-- =======================================================
   * Template Name: Appland - v2.2.0
   * Template URL: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "WebSite",
+  "@id" : "#website",
+  "name": "Pesona Travel — Travel Murah, Antar Paket, Banyuwangi, Bali, Jember, Surabaya",
+  "url": "https://pesonatravel.id",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "{search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Pesona Travel",
+  "alternateName": "Pesona Travel — Travel Murah, Antar Paket, Banyuwangi, Bali, Jember, Surabaya",
+  "url": "https://pesonatravel.id",
+  "logo": "https://pesonatravel.id/img/favicon.jpg"
+}
+</script>
+  
 </head>
 
 <body>
@@ -55,9 +91,8 @@
           <li><a href="#tentang-kami">Tentang Kami</a></li>
           <li><a href="#jalan">Perjalanan</a></li>
           <li><a href="#apace">Antar Paket</a></li>
-          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#contact">Hubungi Kami</a></li>
 
-          <li class="get-started"><a href="#features">Get Started</a></li>
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -73,8 +108,8 @@
           <div>
             <h1>Pesona Travel</h1>
             <h2>Teman Perjalanan Anda</h2>
-            <a href="#" class="download-btn"><i class="bx bxl-play-store"></i> Google Play</a>
-            <a href="#" class="download-btn"><i class="bx bxl-apple"></i> App Store</a>
+            <!--<a href="#" class="download-btn"><i class="bx bxl-play-store"></i> Google Play</a>-->
+            <!--<a href="#" class="download-btn"><i class="bx bxl-apple"></i> App Store</a>-->
           </div>
         </div>
         <div class="col-lg-6 d-lg-flex flex-lg-column align-items-stretch order-1 order-lg-2 hero-img" data-aos="fade-up">
@@ -104,7 +139,7 @@
         </div>
         <div class="row content">
           <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
-            <img src="{{ asset('img/details-2.png')}}" class="img-fluid" alt="">
+            <img src="{{ asset('img/details-2.webp')}}" class="img-fluid" alt="">
           </div>
           <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
             <h3>Perjalanan Reguler (PEREG)</h3>
@@ -115,7 +150,7 @@
         </div>
         <div class="row content">
           <div class="col-md-4" data-aos="fade-right">
-            <img src="{{ asset('img/details-1.png')}}" class="img-fluid" alt="">
+            <img src="{{ asset('img/details-1.webp')}}" class="img-fluid" alt="">
           </div>
           <div class="col-md-8 pt-4" data-aos="fade-up">
             <h3>Sewa Carter Harian (SECARI)</h3>
@@ -429,7 +464,7 @@
         </div>
         <div class="row content">
           <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
-            <img src="{{ asset('img/details-2.png')}}" class="img-fluid" alt="">
+            <img src="{{ asset('img/details-3.webp')}}" class="img-fluid" alt="">
           </div>
           <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
             <h3>Kenapa Harus Menggunakan APACE?</h3>
@@ -528,33 +563,35 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+          <h2>Hubungi Kami</h2>
+                  </div>
 
         <div class="row">
 
           <div class="col-lg-6">
             <div class="row">
-              <div class="col-lg-6 info" data-aos="fade-up">
+             <div class="col-lg-6 info" data-aos="fade-up">
                 <i class="bx bx-map"></i>
-                <h4>Address</h4>
-                <p>A108 Adam Street,<br>New York, NY 535022</p>
+                <h4>Alamat</h4>
+                 <p>
+              Jln. PB Sudirman No. 80 <br>
+              Desa Dukuhmencek<br>
+              Sukorambi - Jember <br><br>
               </div>
               <div class="col-lg-6 info" data-aos="fade-up" data-aos-delay="100">
                 <i class="bx bx-phone"></i>
-                <h4>Call Us</h4>
-                <p>+1 5589 55488 55<br>+1 5589 22548 64</p>
+                <h4>Hubungi Kami</h4>
+                <p>+62 8515 6603 574</p>
               </div>
               <div class="col-lg-6 info" data-aos="fade-up" data-aos-delay="200">
                 <i class="bx bx-envelope"></i>
-                <h4>Email Us</h4>
-                <p>contact@example.com<br>info@example.com</p>
+                <h4>Email</h4>
+                <p>admin@pesonatravel.id<br>info@pesonatravel.id</p>
               </div>
-              <div class="col-lg-6 info" data-aos="fade-up" data-aos-delay="300">
+             <div class="col-lg-6 info" data-aos="fade-up" data-aos-delay="300">
                 <i class="bx bx-time-five"></i>
-                <h4>Working Hours</h4>
-                <p>Mon - Fri: 9AM to 5PM<br>Sunday: 9AM to 1PM</p>
+                <h4>Pembelian Tiket</h4>
+                <p>24 Jam</p>
               </div>
             </div>
           </div>
@@ -562,27 +599,27 @@
           <div class="col-lg-6">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form" data-aos="fade-up">
               <div class="form-group">
-                <input placeholder="Your Name" type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input placeholder="Nama" type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Masukkan nama minimal 4 karakter" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <input placeholder="Your Email" type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                <input placeholder="Email" type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Masukkan email yang valid" />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <input placeholder="Subject" type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <input placeholder="Judul" type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Masukkan judul yang benar " />
                 <div class="validate"></div>
               </div>
               <div class="form-group">
-                <textarea placeholder="Message" class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"></textarea>
+                <textarea placeholder="Pesan" class="form-control" name="message" rows="5" data-rule="required" data-msg="Tulis sesuatu untuk kami"></textarea>
                 <div class="validate"></div>
               </div>
               <div class="mb-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Pesan anda telah terkirim. Terima Kasih!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Kirim Pesan</button></div>
             </form>
           </div>
 
@@ -596,82 +633,17 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
 
-    <div class="footer-newsletter" data-aos="fade-up">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact" data-aos="fade-up">
-            <h3>Appland</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="100">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="200">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links" data-aos="fade-up" data-aos-delay="300">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
+ 
   <div id="hasil" ></div>
     <div class="container py-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Appland</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Pesona Travel</span></strong> - 2020
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/ -->
+         <!--All the links in the footer should remain intact. -->
+         <!--You can delete the links only if you purchased the pro version. -->
+         <!--Licensing information: https://bootstrapmade.com/license/ -->
+         <!--Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-app-landing-page-template/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
@@ -701,7 +673,7 @@
     var rute = document.getElementById("pesan").rute.value;
     var tipe = document.getElementById("pesan").tipe.value;
     var bayar = pax * 125000;
-    var win = window.open('https:/web.whatsapp.com/send?phone=6283853399847&text= Haloo%20Admin.%0A%0A*Paket%20Reguler*%20%0ARute%20%3A%20'+rute+'%2C%0A%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput,'_blank');
+    var win = window.open('https://web.whatsapp.com/send?phone=6285156603574&text= Haloo%20Admin.%0A%0A*Paket%20Reguler*%20%0ARute%20%3A%20'+rute+'%2C%0A%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput,'_blank');
     win.focus(); 
   }
 
@@ -714,7 +686,7 @@
     var rute = document.getElementById("pesan-exec").rute.value;
     var tipe = document.getElementById("pesan-exec").tipe.value;
     var bayar = pax * 150000;
-    var win = window.open('https:/web.whatsapp.com/send?phone=6283853399847&text= Haloo%20Admin.%0A%0A*Paket%20Executive*%20%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput,'_blank');
+    var win = window.open('https://web.whatsapp.com/send?phone=6285156603574&text= Haloo%20Admin.%0A%0A*Paket%20Executive*%20%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput,'_blank');
     win.focus(); 
   }
 
@@ -727,7 +699,7 @@
     var rute = document.getElementById("pesan-lux").rute.value;
     var tipe = document.getElementById("pesan-lux").tipe.value;
     var bayar = pax * 200000;
-    var win = window.open('https:/web.whatsapp.com/send?phone=6283853399847&text= Haloo%20Admin.%0A%0A*Paket%20Luxury*%20%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput,'_blank');
+    var win = window.open('https://web.whatsapp.com/send?phone=6285156603574&text= Haloo%20Admin.%0A%0A*Paket%20Luxury*%20%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput,'_blank');
     win.focus(); 
   }
 
@@ -740,7 +712,7 @@
     var rute = document.getElementById("pesan-vvip").rute.value;
     var tipe = document.getElementById("pesan-vvip").tipe.value;
     var bayar = pax * 650000;
-    var win = window.open('https:/web.whatsapp.com/send?phone=6283853399847&text= Haloo%20Admin.%0A%0A*Paket%20VVIP*%20%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput,'_blank');
+    var win = window.open('https://web.whatsapp.com/send?phone=6285156603574&text= Haloo%20Admin.%0A%0A*Paket%20VVIP*%20%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput,'_blank');
     win.focus(); 
   }
 
@@ -754,7 +726,7 @@
     var tipe = document.getElementById("pesan-apace").tipe.value;
     var tujuan = document.getElementById("pesan-apace").tujuan.value;
     var bayar = pax * 75000;
-    var win = window.open('https:/web.whatsapp.com/send?phone=6283853399847&text= Haloo%20Admin.%0A%0A*Paket%20APACE*%20%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput+'%2C%0A%20%20Alamat%20Tujuan%20%3A%20'+tujuan,'_blank');
+    var win = window.open('https://web.whatsapp.com/send?phone=6285156603574&text= Haloo%20Admin.%0A%0A*Paket%20APACE*%20%0A%20%20Nama%20%3A%20'+nama+'%2C%0A%20%20No.%20Whatsapp%20%3A%20'+wa+'%2C%20%0A%20%20Total%20Penumpang%20%20%3A%20'+pax+'%2C%0A%20%20Total%20Bayar%20%3A%20'+bayar+'%2C%0A%20%20Alamat%20%3A%20'+alamat+'%2C%0A%20%20Alamat%20Penjemputan%20%3A%20'+jemput+'%2C%0A%20%20Alamat%20Tujuan%20%3A%20'+tujuan,'_blank');
     win.focus(); 
   }
   </script>
