@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/pesonatr/public_html/resources/views
+    - /bin/cp /resources/views/desktop.blade.php $DEPLOYPATH
+    - /bin/cp /resources/views/mobile.blade.php $DEPLOYPATH
